@@ -1,4 +1,5 @@
 import styles from "./page.module.css";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -18,6 +19,11 @@ export default function Home() {
         <section className={styles.section}>
           <h2>Hackathon Judge</h2>
           <p>Pankaj is an experienced hackathon judge and enjoys seeing innovative projects.</p>
+        </section>
+        <section className={styles.section}>
+          <h2>Contact</h2>
+          <p>Feel free to reach out!</p>
+          <Link href="/contact">Contact Me</Link>
         </section>
       </main>
       <footer className={styles.footer}>
