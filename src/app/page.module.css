@@ -7,7 +7,7 @@
 }
 
 .header {
-  background-color: #333;
+  background-color: var(--primary);
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -26,8 +26,8 @@
 }
 
 .about h2, .hackathons h2, .projects h2 {
-  color: #333;
-  border-bottom: 2px solid #333;
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
@@ -52,7 +52,22 @@
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: #333;
+  background-color: var(--primary);
   color: #fff;
   margin-top: 30px;
+}
+
+/* Added for Strategy Pattern */
+.strategyButton {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.strategyButton:hover {
+  background-color: #3e8e41;
 }
